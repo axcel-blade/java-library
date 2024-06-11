@@ -11,7 +11,7 @@ import java.util.*;
 public class SortingAlgorithms {
     /*****************************************************************************************
      * Method - bubbleSort                                                                   *
-     * Import - arrayData[] (Integer)                                                        *
+     * Import - pArray[] (Integer)                                                           *
      * Export - arrayData[] (Integer)                                                        *
      * Description - This function is sort the array in ascending order and return the array *
      ****************************************************************************************/
@@ -44,7 +44,7 @@ public class SortingAlgorithms {
 
     /*****************************************************************************************
      * Method - selectionSort                                                                *
-     * Import - arrayData[] (Integer)                                                        *
+     * Import - pArray[] (Integer)                                                           *
      * Export - arrayData[] (Integer)                                                        *
      * Description - This function is sort the array in ascending order and return the array *
      ****************************************************************************************/
@@ -73,7 +73,7 @@ public class SortingAlgorithms {
 
     /*****************************************************************************************
      * Method - insertionSort                                                                *
-     * Import - arrayData[] (Integer)                                                        *
+     * Import - pArray[] (Integer)                                                           *
      * Export - arrayData[] (Integer)                                                        *
      * Description - This function is sort the array in ascending order and return the array *
      ****************************************************************************************/
