@@ -16,7 +16,7 @@ public class InputValidationChecker {
      * Description - This function check the user input is valid or not. If it is valid it will return the value or else it loop until *
      *                  the enter valid integer                                                                                        *
      ***********************************************************************************************************************************/
-    public static int IntegerValidationChecker(String pPromptToUser) {
+    public static int integerValidationChecker(String pPromptToUser) {
         Scanner scanner = new Scanner(System.in);
         int number = 0;
         boolean isNotValid = true;
