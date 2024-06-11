@@ -28,7 +28,6 @@ public class InputValidationChecker {
                 
                 if (userInput.trim().isEmpty()) {
                     throw new NoSuchElementException();
-
                 } else {
                     number = Integer.parseInt(userInput);
                 }
@@ -51,9 +50,6 @@ public class InputValidationChecker {
         } while (isNotValid);
 
         scanner.close();
-
         return number;
-
     }
-
 }

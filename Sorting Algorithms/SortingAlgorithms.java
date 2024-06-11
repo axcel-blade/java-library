@@ -29,17 +29,14 @@ public class SortingAlgorithms {
                     arrayData[j] = arrayData[j + 1];
                     arrayData[j + 1] = temp;
                     swapped = true;
-
                 }
-
             }
+
             if (!swapped) {
                 break;
             }
-
         }
         return arrayData;
-
     }
 
     /*****************************************************************************************
@@ -58,17 +55,14 @@ public class SortingAlgorithms {
             for (int j = i + 1; j < arrayLength; j++) {
                 if (arrayData[j] < arrayData[minIndex]) {
                     minIndex = j;
-
                 }
-
             }
             int temp = arrayData[minIndex];
             arrayData[minIndex] = arrayData[i];
             arrayData[i] = temp;
-
         }
-        return arrayData;
 
+        return arrayData;
     }
 
     /*****************************************************************************************
@@ -88,13 +82,11 @@ public class SortingAlgorithms {
             while (j >= 0 && arrayData[j] > temp) {
                 arrayData[j + 1] = arrayData[j];
                 j = j - 1;
-
             }
+
             arrayData[j + 1] = temp;
-
         }
+
         return arrayData;
-
     }
-
 }
