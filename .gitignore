@@ -1,5 +1,6 @@
 # Files
 *.class
+*Test.java
 
 # Folders
 Test/
