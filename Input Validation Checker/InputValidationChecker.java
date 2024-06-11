@@ -1,7 +1,7 @@
 /************************************************************************
  * Author - Srikanth Fernando                                           *
  * GitHub Username - axcel-blade                                        *
- * Title - Java Input Validation Checker                                *
+ * Title - Input Validation Checker                                     *
  * Description - This Java code is for check if the user input is valid *
  * Created - 11/06/2024                                                 *
  * Last Modified - 11/06/2024                                           *
