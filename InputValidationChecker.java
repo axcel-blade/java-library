@@ -40,6 +40,8 @@ public class InputValidationChecker {
 
         } while (isNotValid);
 
+        userInput.close();
+
         return number;
 
     }
