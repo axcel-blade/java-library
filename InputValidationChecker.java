@@ -17,30 +17,40 @@ public class InputValidationChecker {
      *                  the enter valid integer                                                                                        *
      ***********************************************************************************************************************************/
     public static int IntegerValidationChecker(String pPromptToUser) {
-        Scanner userInput = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int number = 0;
         boolean isNotValid = true;
 
         do {
             try {
                 System.out.print(pPromptToUser);
-                number = userInput.nextInt();
+                String userInput = scanner.nextLine();
+                
+                if (userInput.trim().isEmpty()) {
+                    throw new NoSuchElementException();
+
+                } else {
+                    number = Integer.parseInt(userInput);
+                }
 
                 isNotValid = false;
 
             } catch (InputMismatchException e) {
                 System.out.println("\nERROR: Please enter a number.\n");
-                userInput.next(); // Clear the user input
+                scanner.next(); // Clear the user input
 
             } catch (NoSuchElementException e) {
                 System.out.println("\nERROR: Do not leave the field empty.\n");
-                userInput.next(); // Clear the user input
+                scanner.next(); // Clear the user input
 
+            } catch (NumberFormatException e) {
+                System.out.println("\nERROR: Please enter a number.\n");
+                scanner.next(); // Clear the user input
             }
 
         } while (isNotValid);
 
-        userInput.close();
+        scanner.close();
 
         return number;
 
