@@ -16,7 +16,7 @@ public class SortingAlgorithms {
      * Description - This function is sort the array in ascending order and return the array *
      ****************************************************************************************/
     public static int[] bubbleSort(int[] pArray) {
-        int[] arrayData = pArray
+        int[] arrayData = pArray;
         int arrayLength = arrayData.length;
         boolean swapped;
 
@@ -49,7 +49,7 @@ public class SortingAlgorithms {
      * Description - This function is sort the array in ascending order and return the array *
      ****************************************************************************************/
     public static int[] selectionSort(int[] pArray) {
-        int[] arrayData = pArray
+        int[] arrayData = pArray;
         int arrayLength = arrayData.length;
 
         for (int i = 0; i < arrayLength - 1; i++) {
@@ -78,7 +78,7 @@ public class SortingAlgorithms {
      * Description - This function is sort the array in ascending order and return the array *
      ****************************************************************************************/
     public static int[] insertionSort(int[] pArray) {
-        int[] arrayData = pArray
+        int[] arrayData = pArray;
         int arrayLength = arrayData.length;
 
         for (int i = 1; i < arrayLength; ++i) {

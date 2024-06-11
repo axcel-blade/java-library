@@ -7,13 +7,10 @@ class SortingAlgorithms {
         int[] numArray = {5, 2, 8, 1, 9};
         int[] sortedArray = {1, 2, 5, 8, 9};
 
-        bubbleSortTest(sortingAlgorithms, numArray, sortedArray);
+        int[] tempArray = sortingAlgorithms.bubbleSort(numArray);
+        assert Arrays.equals(sortedArray, tempArray) : "Test Failed";
         System.out.println("Test Passed");
 
     }
 
-    public static void bubbleSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pSortedArray) {
-        int[] tempArray = pSortingAlgorithms.bubbleSort(pNumArray);
-        assert Arrays.equals(pSortedArray, tempArray) : "Test Failed";
-    }
 }
