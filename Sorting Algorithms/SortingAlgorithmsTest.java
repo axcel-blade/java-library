@@ -5,31 +5,31 @@ class SortingAlgorithmsTest {
     public static void main(String[] args) {
         SortingAlgorithms sortingAlgorithms = new SortingAlgorithms();
         int[] numArray = {5, 2, 8, 1, 9};
-        int[] sortedArray = {1, 2, 5, 8, 9};
+        int[] expectedSortedArray = {1, 2, 5, 8, 9};
 
-        bubbleSortTest(sortingAlgorithms, numArray, sortedArray);
-        selectionSortTest(sortingAlgorithms, numArray, sortedArray);
-        insertionSortTest(sortingAlgorithms, numArray, sortedArray);
+        bubbleSortTest(sortingAlgorithms, numArray, expectedSortedArray);
+        selectionSortTest(sortingAlgorithms, numArray, expectedSortedArray);
+        insertionSortTest(sortingAlgorithms, numArray, expectedSortedArray);
 
     }
 
-    public static void bubbleSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pSortedArray) {
+    public static void bubbleSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pExpectedSortedArray) {
         int[] tempArray = pSortingAlgorithms.bubbleSort(pNumArray);
-        assert Arrays.equals(pSortedArray, tempArray) : "Test Failed";
+        assert Arrays.equals(pExpectedSortedArray, tempArray) : "Test Failed";
         System.out.println("Test Passed");
 
     }
 
-    public static void selectionSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pSortedArray) {
+    public static void selectionSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pExpectedSortedArray) {
         int[] tempArray = pSortingAlgorithms.bubbleSort(pNumArray);
-        assert Arrays.equals(pSortedArray, tempArray) : "Test Failed";
+        assert Arrays.equals(pExpectedSortedArray, tempArray) : "Test Failed";
         System.out.println("Test Passed");
 
     }
 
-    public static void insertionSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pSortedArray) {
+    public static void insertionSortTest(SortingAlgorithms pSortingAlgorithms, int[] pNumArray, int[] pExpectedSortedArray) {
         int[] tempArray = pSortingAlgorithms.bubbleSort(pNumArray);
-        assert Arrays.equals(pSortedArray, tempArray) : "Test Failed";
+        assert Arrays.equals(pExpectedSortedArray, tempArray) : "Test Failed";
         System.out.println("Test Passed");
 
     }
