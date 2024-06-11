@@ -38,4 +38,36 @@ public class RemoveArrayDuplicates {
 
         return uniqueArray;
     }
+
+    /*****************************************************************************************
+     * Method - removeStringArrayDuplicates                                                  *
+     * Import - pArray[] (String)                                                            *
+     * Export - uniqueArray[] (String)                                                       *
+     * Description - This function is remove duplicates in a string array                    *
+     ****************************************************************************************/
+    public static String[] removeStringArrayDuplicates(String[] pArray) {
+        String[] passedArray = pArray;
+        // Create a temporary array to hold unique elements.
+        int passedArrayLength = passedArray.length;
+        String[] tempArray = new String[passedArrayLength];
+        int j = 0;
+    
+        // Copy unique elements to the temporary array.
+        for (int i = 0; i < passedArrayLength - 1; i++) {
+            if (!passedArray[i].equals(passedArray[i + 1])) {
+                tempArray[j++] = passedArray[i];
+            }
+        }
+    
+        // Add the last element as it is always unique.
+        tempArray[j++] = passedArray[passedArrayLength - 1];
+    
+        // Copy the unique elements back to the original array.
+        String[] uniqueArray = new String[j];
+        for (int i = 0; i < j; i++) {
+            uniqueArray[i] = tempArray[i];
+        }
+
+        return uniqueArray;
+    }
 }
