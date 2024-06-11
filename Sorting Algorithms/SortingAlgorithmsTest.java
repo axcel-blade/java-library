@@ -8,6 +8,7 @@ class SortingAlgorithms {
         int[] sortedArray = {1, 2, 5, 8, 9};
 
         bubbleSortTest(sortingAlgorithms, numArray, sortedArray);
+        System.out.println("Test Passed");
 
     }
 

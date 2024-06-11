@@ -3,9 +3,13 @@ import java.io.*;
 public class InputValidationCheckerTest {
     public static void main(String[] args) {
         InputValidationChecker validationChecker = new InputValidationChecker();
+
         isValidInteger(validationChecker);
-        System.out.println();
+        System.out.println("Test Passed");
+
         isNotValidInteger(validationChecker);
+        System.out.println("Test Passed");
+
     }
 
     public static void isValidInteger(InputValidationChecker pValidationChecker) {
