@@ -14,7 +14,7 @@ public class InputValidationCheckerTest {
         InputStream inputStream = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(inputStream);
 
-        assert 10 == pValidationChecker.IntegerValidationChecker("Enter a number: ") : "Test Failed.";
+        assert 10 == pValidationChecker.integerValidationChecker("Enter a number: ") : "Test Failed.";
     }
 
     public static void isNotValidInteger(InputValidationChecker pValidationChecker) {
@@ -23,6 +23,6 @@ public class InputValidationCheckerTest {
         InputStream inputStream = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(inputStream);
 
-        assert 10 == pValidationChecker.IntegerValidationChecker("Enter a number: ") : "Test Failed.";
+        assert 10 == pValidationChecker.integerValidationChecker("Enter a number: ") : "Test Failed.";
     }
 }
