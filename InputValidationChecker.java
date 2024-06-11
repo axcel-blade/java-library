@@ -6,7 +6,7 @@
  * Created - 11/06/2024                                                 *
  * Last Modified - 11/06/2024                                           *
  ***********************************************************************/
-public class JavaInputValidationChecker {
+public class InputValidationChecker {
     /***********************************************************************************************************************************
      * Method - IntegerValidationChecker                                                                                               *
      * Import -                                                                                                                        *
