@@ -8,7 +8,9 @@ class SortingAlgorithmsTest {
         int[] expectedSortedArray = {1, 2, 5, 8, 9};
 
         bubbleSortTest(sortingAlgorithms, numArray, expectedSortedArray);
+
         selectionSortTest(sortingAlgorithms, numArray, expectedSortedArray);
+
         insertionSortTest(sortingAlgorithms, numArray, expectedSortedArray);
 
     }
