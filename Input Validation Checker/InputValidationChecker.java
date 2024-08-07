@@ -1,14 +1,14 @@
 /************************************************************************
  * Author - Srikanth Fernando                                           *
- * GitHub Username - axcel-blade                                        *
  * Title - Input Validation Checker                                     *
  * Description - This Java code is for check if the user input is valid *
  * Created - 11/06/2024                                                 *
- * Last Modified - 11/06/2024                                           *
+ * Last Modified - 07/08/2024                                           *
  ***********************************************************************/
 import java.util.*;
 
-public class InputValidationChecker {
+public class InputValidationChecker 
+{
     /***********************************************************************************************************************************
      * Method - IntegerValidationChecker                                                                                               *
      * Import - pPromptToUser (String)                                                                                                 *
@@ -16,40 +16,46 @@ public class InputValidationChecker {
      * Description - This function check the user input is valid or not. If it is valid it will return the value or else it loop until *
      *                  the enter valid integer                                                                                        *
      ***********************************************************************************************************************************/
-    public static int integerValidationChecker(String pPromptToUser) {
-        Scanner scanner = new Scanner(System.in);
+    public static int integerValidationChecker(Scanner pScanner, String pPromptToUser) 
+    {
         int number = 0;
         boolean isNotValid = true;
 
-        do {
-            try {
+        do 
+        {
+            try 
+            {
                 System.out.print(pPromptToUser);
-                String userInput = scanner.nextLine();
+                String userInput = pScanner.nextLine();
                 
-                if (userInput.trim().isEmpty()) {
+                if (userInput.isEmpty()) 
+                {
                     throw new NoSuchElementException();
-                } else {
+                } else 
+                {
                     number = Integer.parseInt(userInput);
                 }
 
                 isNotValid = false;
 
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException e) 
+            {
                 System.out.println("\nERROR: Please enter a number.\n");
                 //scanner.next(); // Clear the user input
 
-            } catch (NoSuchElementException e) {
+            } catch (NoSuchElementException e) 
+            {
                 System.out.println("\nERROR: Do not leave the field empty.\n");
                 //scanner.next(); // Clear the user input
 
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException e) 
+            {
                 System.out.println("\nERROR: Please enter a number.\n");
                 //scanner.next(); // Clear the user input
             }
 
         } while (isNotValid);
 
-        scanner.close();
         return number;
     }
 }
