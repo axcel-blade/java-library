@@ -11,7 +11,7 @@ public class InputValidationChecker
 {
     /***********************************************************************************************************************************
      * Method - IntegerValidationChecker                                                                                               *
-     * Import - pPromptToUser (String)                                                                                                 *
+     * Import - pScanner (Scanner), pPromptToUser (String)                                                                                                 *
      * Export - number (Integer)                                                                                                       *
      * Description - This function check the user input is valid or not. If it is valid it will return the value or else it loop until *
      *                  the enter valid integer                                                                                        *
