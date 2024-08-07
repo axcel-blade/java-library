@@ -36,15 +36,15 @@ public class InputValidationChecker {
 
             } catch (InputMismatchException e) {
                 System.out.println("\nERROR: Please enter a number.\n");
-                scanner.next(); // Clear the user input
+                //scanner.next(); // Clear the user input
 
             } catch (NoSuchElementException e) {
                 System.out.println("\nERROR: Do not leave the field empty.\n");
-                scanner.next(); // Clear the user input
+                //scanner.next(); // Clear the user input
 
             } catch (NumberFormatException e) {
                 System.out.println("\nERROR: Please enter a number.\n");
-                scanner.next(); // Clear the user input
+                //scanner.next(); // Clear the user input
             }
 
         } while (isNotValid);
